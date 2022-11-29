@@ -1,3 +1,7 @@
+# Creators
+Simple Project created with friend
+#spoojler  https://github.com/spoojler
+
 # ViteRC ❤️‍🔥
 
 A modern minimal Vite + React + TypeScript template with pre-configured ESLint (with Airbnb JS/React rules), Prettier, Testing with Jest and Git hooks with Husky out of the box 📦
