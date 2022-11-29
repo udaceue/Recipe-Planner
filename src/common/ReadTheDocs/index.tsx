@@ -39,6 +39,10 @@ function ReadTheDocs() {
         Jest
       </a>
       {' | '}
+      <a className="App-link" href="https://styled-components.com/" target="_blank" rel="noopener noreferrer">
+        Styled-Components
+      </a>
+      {' | '}
       <a className="App-link" href="https://testing-library.com" target="_blank" rel="noopener noreferrer">
         Testing Library
       </a>

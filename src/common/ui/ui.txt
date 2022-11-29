@@ -1,0 +1,3 @@
+Shared components like buttons and dropdowns. 
+
+Tutaj umieszczamy proste komponenty, które będą reużywalne - przyciski, listy rozwijane itp.

@@ -1,0 +1,3 @@
+Here will be tests for our Application.
+
+Tutaj umieszcamy testy dla naszej appki.

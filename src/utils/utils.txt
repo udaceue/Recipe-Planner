@@ -1,0 +1,6 @@
+very small and simple functions, generally pure functions that returns always the same value
+for the same args for example "Format date" "multiplyByTwo"
+
+
+bardzo małe i proste funkcje, generalnie czyste funkcje, które zwracają zawsze tę samą wartość
+dla tych samych argumentów, na przykład formatuj date, pomnóż przez dwa.

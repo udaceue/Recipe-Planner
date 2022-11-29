@@ -1,7 +1,8 @@
+/* eslint-disable import/extensions */
 import { useState } from 'react';
 import './App.css';
-import Header from '@/Components/Header';
-import ReadTheDocs from '@/Components/ReadTheDocs';
+import Header from './common/Header';
+import ReadTheDocs from './common/ReadTheDocs';
 
 function App() {
   const [count, setCount] = useState(0);

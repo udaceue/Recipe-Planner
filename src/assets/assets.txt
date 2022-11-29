@@ -1,0 +1,3 @@
+Contains images/svg/css basically everything what's not js/tsx file
+
+Tutaj umieszcamy obrazki/svg/zewnetrzne cssy i inne rzeczy, które nie są plikami js bądź typescriptu.
