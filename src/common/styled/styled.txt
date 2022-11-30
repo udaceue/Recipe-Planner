@@ -1,0 +1,3 @@
+Here will be styled components created with styled components library 
+
+Tutaj umieszczamy style dla poszczególnych komponentów.
