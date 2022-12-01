@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { fridgeReducer } from './fridgeSlice';
 import { recipesReducer } from './recipesSlice';
+import 
 
 export const store = configureStore({
   reducer: {
@@ -8,3 +9,6 @@ export const store = configureStore({
     recipes: recipesReducer,
   },
 });
+
+export type RootState = ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch
