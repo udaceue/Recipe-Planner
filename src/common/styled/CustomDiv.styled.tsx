@@ -13,6 +13,7 @@ interface CustomDivProps {
 }
 
 const CustomDiv = styled.div`
+  border: 2px solid black;
   width: ${({ width }: CustomDivProps) => width};
   height: ${({ height }: CustomDivProps) => height};
   margin: ${({ margin }: CustomDivProps) => margin};
@@ -22,7 +23,8 @@ const CustomDiv = styled.div`
   margin-bottom: ${({ mb }: CustomDivProps) => mb};
   display: ${({ display }: CustomDivProps) => display};
   flex-direction: ${({ flexDirection }: CustomDivProps) => flexDirection};
-  background-color: blue;
+
+  
 `;
 
 export default CustomDiv;
