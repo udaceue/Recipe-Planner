@@ -9,6 +9,7 @@ interface Product {
   name: string;
   amount: number;
   weight: number;
+  inStock: boolean;
 }
 
 // Define the initial state using that type
@@ -20,11 +21,12 @@ export const productsSlice = createSlice({
   name: 'products',
   initialState,
   reducers: {
-    increment: (state) => {
+    add: (state) => {
       const newProduct: Product = {
         name: 'cucumber',
         amount: 1,
         weight: 300,
+        inStock: true,
       };
       state.products.push(newProduct);
     },
