@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 interface ProductsState {
-  products: object[];
+  products: Product[];
 }
 
-interface Product {
+export interface Product {
   name: string;
-  amount: number;
-  weight: number;
+  amount?: number;
+  weight?: number;
   inStock: boolean;
 }
 

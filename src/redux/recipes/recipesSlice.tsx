@@ -1,14 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { Product } from '../products/productsSlice';
 
 interface RecipesState {
-  recipes: object[];
+  recipes: Recipe[];
 }
 
 interface Recipe {
   title: string;
   description: string;
-  products: string[];
-  img: string;
+  products: Product[];
+  imgUrl: string;
+}
+
+interface AddAction {
+  payload: Recipe;
+  type?: string;
 }
 
 const initialState: RecipesState = {
@@ -19,13 +25,8 @@ export const recipesSlice = createSlice({
   name: 'recipes',
   initialState,
   reducers: {
-    add: (state) => {
-      const newRecipe: Recipe = {
-        title: 'cucumber',
-        description: 'asdasd',
-        products: ['first'],
-        img: 'http://some-server/recipe.jpg',
-      };
+    add: (state, action: AddAction) => {
+      const newRecipe: Recipe = action.payload;
       state.recipes.push(newRecipe);
     },
   },
