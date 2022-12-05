@@ -10,6 +10,10 @@ export interface Product {
   weight?: number;
   inStock: boolean;
 }
+interface AddAction {
+  payload: Product;
+  type?: string;
+}
 
 const initialState: ProductsState = {
   products: [],
@@ -19,13 +23,8 @@ export const productsSlice = createSlice({
   name: 'products',
   initialState,
   reducers: {
-    add: (state) => {
-      const newProduct: Product = {
-        name: 'cucumber',
-        amount: 1,
-        weight: 300,
-        inStock: true,
-      };
+    add: (state, action: AddAction) => {
+      const newProduct: Product = action.payload;
       state.products.push(newProduct);
     },
   },
