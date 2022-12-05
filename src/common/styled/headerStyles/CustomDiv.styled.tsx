@@ -11,11 +11,12 @@ interface CustomDivProps {
   display?: string;
   flexDirection?: string;
   padding?: string;
+  maxWidth?: string;
 }
 
 const CustomDiv = styled.div`
-  width: ${({ width }: CustomDivProps) => width};
-  height: ${({ height }: CustomDivProps) => height};
+  max-width: ${({ width }: CustomDivProps) => width};
+  min-height: ${({ height }: CustomDivProps) => height};
   padding: ${({ padding }: CustomDivProps) => padding};
   margin: ${({ margin }: CustomDivProps) => margin};
   margin-left: ${({ ml }: CustomDivProps) => ml};
