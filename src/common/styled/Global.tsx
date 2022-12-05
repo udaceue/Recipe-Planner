@@ -9,8 +9,13 @@ const GlobalStyles = createGlobalStyle`
     box-sizing:borded-box;
 }
 
+html{
+    font-size: 10px;
+    width: 100%;
+}
+
 body{
-    background-color: #212121
+    background-color: #212121;
 }
 `;
 
