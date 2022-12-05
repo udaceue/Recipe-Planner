@@ -11,10 +11,11 @@ const GlobalStyles = createGlobalStyle`
 
 html{
     font-size: 10px;
+    width: 100%;
 }
 
 body{
-    background-color: #212121
+    background-color: #212121;
 }
 `;
 
