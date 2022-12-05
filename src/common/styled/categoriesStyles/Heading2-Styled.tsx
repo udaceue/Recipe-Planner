@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { HeadingProps } from './Heading1-Styled';
+import { HeadingProps } from '../headerStyles/Heading1-Styled';
 
 const Heading1 = styled.h2<HeadingProps>`
   font-size: clamp(1.3rem, 12vw, 2.6rem);

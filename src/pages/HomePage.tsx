@@ -1,4 +1,5 @@
 import CustomHeader from '../common/ui/CustomHeader';
+import Categories from '../common/ui/Categories';
 import useAppDispatch from '../redux/hooks/useAppDispatch';
 import { recipesActions } from '../redux/recipes/recipesSlice';
 
@@ -19,9 +20,11 @@ function HomePage() {
   return (
     <>
       <CustomHeader />
-      <button onClick={handleAddProduct} style={{ width: '200px', height: '200px' }}>
+      <Categories />
+
+      {/* <button onClick={handleAddProduct} style={{ width: '200px', height: '200px' }}>
         Add product
-      </button>
+      </button> */}
     </>
   );
 }

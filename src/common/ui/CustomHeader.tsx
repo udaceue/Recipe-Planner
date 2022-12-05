@@ -3,7 +3,7 @@ import Header from '../styled/headerStyles/Header.Styled';
 import Wrapper from '../styled/headerStyles/Wrapper.Styled';
 import Heading1 from '../styled/headerStyles/Heading1-Styled';
 import Description from '../styled/headerStyles/Description.Styled';
-import CustomDiv from '../styled/headerStyles/CustomDiv.styled';
+import CustomDiv from '../styled/CustomDiv.styled';
 import Avatar from '../styled/headerStyles/Avatar.Styled';
 import Hotpot from '../../assets/Hotpot.png';
 
