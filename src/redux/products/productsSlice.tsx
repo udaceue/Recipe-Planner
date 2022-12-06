@@ -1,15 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { type } from '@testing-library/user-event/dist/types/setup/directApi';
 
 interface ProductsState {
   products: Product[];
 }
 
-export interface Product {
-  name: string;
-  amount?: number;
-  weight?: number;
-  inStock: boolean;
+interface ProductTypes {
+  ProductWithAmount: { name: string; amount: number; inStock?: boolean };
+  ProductWithWeight: { name: string; weight: number; inStock?: boolean };
 }
+
+export type Product = ProductTypes['ProductWithAmount'] | ProductTypes['ProductWithWeight'];
 interface AddAction {
   payload: Product;
   type?: string;
