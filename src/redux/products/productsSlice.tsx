@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { type } from '@testing-library/user-event/dist/types/setup/directApi';
 
 interface ProductsState {
   products: Product[];
