@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Category = styled.div`
+const SingleCategory = styled.div`
   min-width: 10rem;
   border-radius: 1.2rem;
   font-size: clamp(1.2rem, 1.5vw, 1.4rem);
@@ -17,4 +17,4 @@ const Category = styled.div`
     margin: 0.4rem;
   }
 `;
-export default Category;
+export default SingleCategory;

@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
-const OverflowX = styled.div`
-  width: 100%;
+const CategoriesWrapper = styled.div`
+  display: flex;
   min-height: 3.5rem;
+  margin-bottom: 3.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  max-width: 100%;
   overflow-x: scroll;
   display: flex;
   position: relative;
@@ -27,4 +31,4 @@ const OverflowX = styled.div`
   }
 `;
 
-export default OverflowX;
+export default CategoriesWrapper;
