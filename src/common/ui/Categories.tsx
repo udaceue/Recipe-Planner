@@ -2,7 +2,7 @@ import React from 'react';
 import Wrapper from '../styled/categoriesStyles/Wrapper';
 import SingleCategory from '../styled/categoriesStyles/SingleCategory.styled';
 import CategoriesWrapper from '../styled/categoriesStyles/CategoriesWrapper';
-import Heading2 from '../styled/categoriesStyles/Heading2-Styled';
+import Heading2 from '../styled/Heading2-Styled';
 
 function Categories() {
   return (

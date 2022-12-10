@@ -6,8 +6,9 @@ import { productsSelectors } from '../redux/products/productsSelectors';
 import { Product, productsActions } from '../redux/products/productsSlice';
 import { recipesSelectors } from '../redux/recipes/recipesSelectors';
 import { recipesActions } from '../redux/recipes/recipesSlice';
+import Dishes from '../common/ui/Dishes';
 
-const HomePage = () => {
+function HomePage() {
   const dispatch = useAppDispatch();
   const products = useAppSelector(productsSelectors.selectProducts);
   const recipes = useAppSelector(recipesSelectors.selectRecipes);
@@ -33,12 +34,13 @@ const HomePage = () => {
       <CustomHeader />
 
       <Categories />
+      <Dishes />
 
-      <button onClick={handleAddProduct} style={{ width: '200px', height: '200px' }}>
+      {/* <button onClick={handleAddProduct} style={{ width: '200px', height: '200px' }}>
         Add
-      </button>
+      </button> */}
     </>
   );
-};
+}
 
 export default HomePage;
