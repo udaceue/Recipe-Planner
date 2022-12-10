@@ -1,4 +1,5 @@
 import CustomHeader from '../common/ui/CustomHeader';
+import Categories from '../common/ui/Categories';
 import useAppDispatch from '../redux/hooks/useAppDispatch';
 import useAppSelector from '../redux/hooks/useAppSelector';
 import { productsSelectors } from '../redux/products/productsSelectors';
@@ -30,6 +31,9 @@ const HomePage = () => {
   return (
     <>
       <CustomHeader />
+
+      <Categories />
+
       <button onClick={handleAddProduct} style={{ width: '200px', height: '200px' }}>
         Add
       </button>
