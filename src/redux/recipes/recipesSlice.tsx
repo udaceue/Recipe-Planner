@@ -5,7 +5,7 @@ interface RecipesState {
   recipes: Recipe[];
 }
 
-interface Recipe {
+export interface Recipe {
   title: string;
   description: string;
   products: Product[];
