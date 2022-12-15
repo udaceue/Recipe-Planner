@@ -11,7 +11,7 @@ interface ProductTypes {
 
 export type Product = ProductTypes['ProductWithAmount'] | ProductTypes['ProductWithWeight'];
 interface AddAction {
-  payload: Product;
+  payload: Product[];
   type?: string;
 }
 
@@ -24,8 +24,7 @@ export const productsSlice = createSlice({
   initialState,
   reducers: {
     add: (state, action: AddAction) => {
-      const newProduct: Product = action.payload;
-      state.products.push(newProduct);
+      state.products = state.products.concat(action.payload);
     },
   },
 });
