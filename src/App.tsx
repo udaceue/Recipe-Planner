@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Container from './common/styled/Container.Styled';
 import GlobalStyles from './common/styled/Global';
-import fakeFetch from './data/fetchData';
+import fakeFetch from './data/fakeFetch';
 import productsData from './data/productsDataMock';
 import recipesData from './data/recipesDataMock';
 import HomePage from './pages/HomePage';
