@@ -5,7 +5,7 @@ interface RecipesState {
   recipes: Recipe[];
 }
 
-interface Recipe {
+export interface Recipe {
   title: string;
   description: string;
   products: Product[];
@@ -13,7 +13,7 @@ interface Recipe {
 }
 
 interface AddAction {
-  payload: Recipe;
+  payload: Recipe[];
   type?: string;
 }
 
@@ -26,8 +26,7 @@ export const recipesSlice = createSlice({
   initialState,
   reducers: {
     add: (state, action: AddAction) => {
-      const newRecipe: Recipe = action.payload;
-      state.recipes.push(newRecipe);
+      state.recipes = state.recipes.concat(action.payload);
     },
   },
 });
