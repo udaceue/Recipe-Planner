@@ -3,8 +3,9 @@ import Categories from '../common/ui/Categories';
 import useAppDispatch from '../redux/hooks/useAppDispatch';
 import { Product, productsActions } from '../redux/products/productsSlice';
 import { recipesActions } from '../redux/recipes/recipesSlice';
+import Dishes from '../common/ui/Dishes';
 
-const HomePage = () => {
+function HomePage() {
   const dispatch = useAppDispatch();
 
   const handleAddProduct = () => {
@@ -27,11 +28,12 @@ const HomePage = () => {
     <>
       <CustomHeader />
       <Categories />
+      <Dishes />
       <button onClick={handleAddProduct} style={{ width: '200px', height: '200px' }}>
         Add
       </button>
     </>
   );
-};
+}
 
 export default HomePage;
